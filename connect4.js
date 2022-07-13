@@ -22,6 +22,9 @@ function makeBoard(height = HEIGHT, width = WIDTH) {
   const rows = new Array(height);
   for (let i = 0; i < rows.length; i++) {
     board.push(rows[i] = new Array(width));
+    for(let j = 0; j < rows[i].length; j++){
+      board[i][j] = null;
+    }
   }
 
 }
